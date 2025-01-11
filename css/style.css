@@ -127,3 +127,28 @@ button {
   bottom: 0;
   margin: auto;
 }
+
+.info {
+  background-color: #f8f8f8;
+  padding: 170px 0;
+}
+
+.info__title {
+font-size: 160px;
+text-align: center;
+line-height: .8;
+text-transform: uppercase;
+}
+
+.info__img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.info__content {
+  display: flex;
+}
+
+.info__list {
+  column-count: 2;
+}
