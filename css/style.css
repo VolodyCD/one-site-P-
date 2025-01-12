@@ -13,7 +13,6 @@ html {
 
 body {
   margin: 0;
-
   font-family: "Inter", serif;
   font-weight: 900;
   font-size: 24px;
@@ -23,9 +22,11 @@ body {
 
 /* наследование бок сайзинг */
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
+
 a {
   color: inherit;
   /* наследование цвета от родителя */
@@ -90,9 +91,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;    /*  ??  */
+  position: relative;
+  /*  ??  */
   height: calc(100vh - 135px);
-  
+
 }
 
 .title {
@@ -101,19 +103,19 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
   padding-left: 150px;
   line-height: .8;
-  
+
 }
 
 .subtitle {
   font-size: 160px;
   background: linear-gradient(90deg, #FF5017 0%, #000000 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
   align-self: flex-end;
   padding-right: 90px;
   padding-bottom: 50px;
@@ -134,10 +136,10 @@ button {
 }
 
 .info__title {
-font-size: 160px;
-text-align: center;
-line-height: .8;
-text-transform: uppercase;
+  font-size: 160px;
+  text-align: center;
+  line-height: .8;
+  text-transform: uppercase;
 }
 
 .info__img {
@@ -147,8 +149,49 @@ text-transform: uppercase;
 
 .info__content {
   display: flex;
+  margin-bottom: 170px;
+  padding-left: 155px;
+  padding-right: 100px;
+  gap: 94px;
 }
 
 .info__list {
-  column-count: 2;
+  column-count: 2;   /* розбивка контекту на кількість колонок*/
+  gap: 140px;
+}
+
+.info__list dt,
+.info__list dd {
+  display: inline-block;
+  margin: 0;
+}
+
+.info__list-line {
+  margin-bottom: 22px;
+}
+
+.price {
+  font-size: 46px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.order {
+  padding: 30px 60px;
+  background: linear-gradient(181.77deg, #FF5017 2.24%, #FF6837 99.25%);
+  font-family: "Inter", serif;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.info__gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;          /* відстань між елементами */
+  border-radius: 20px;
+}
+
+.info__gallery img {
+  max-width: 100%;
 }
