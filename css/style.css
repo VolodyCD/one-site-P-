@@ -348,11 +348,17 @@ button {
 
 }
 
+@media(max-width: 1200px) {
+  .contacts__box {
+    padding-left: 150px;
+  }
+}
 
-@media (max-widh: 1200px) {
+
+@media(max-width: 1200px) {
   .title {
     padding-left: 0;
-    font-size: 280px;
+    font-size: 278px;
   }
 
   .subtitle {
@@ -375,9 +381,41 @@ button {
     gap: 20px;
   }
 
+  .color__text {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .gallery-box {
+    padding: 50px 2opx;
+    flex-wrap: wrap;
+  }
+
+  .gallery-box__item {
+    width: 48%;
+  }
+
+  .gallery-box img {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .contacts__box {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 60px;
+  }
+
+  .contacts {
+    padding: 100px 0;
+  }
+  .footer {
+    padding-bottom: 50px;
+  }
+
 }
 
-@media (max-widh: 1040px) {
+@media (max-width: 1040px) {
 
  .info__gallery img {
   width: 100%;
@@ -395,7 +433,7 @@ button {
 
 
 
-@media (max-widh: 800px) {
+@media (max-width: 800px) {
 
   .header__top {
     padding-top: 25px;
@@ -428,13 +466,23 @@ button {
     font-size: 18px;
    }
 
+   .contacts__box {
+    display: block;
+   }
 
+   .contacts__text__rules {
+    padding-top: 20px;
+    padding-bottom: 40px;
+   }
 
+   .form__order {
+    width: auto;
+   }
 
 }
 
 
-@media (max-widh: 670px) {
+@media (max-width: 670px) {
   .info__content {
     display: block;
     text-align: center;
@@ -444,18 +492,46 @@ button {
     padding: 50px 0;
   }
 
+  .color__text {
+    font-size: 38px;
+  }
+
+  .gallery-box__item {
+    width: 100%;
+  }
+
+  .gallery-box {
+    padding: 70px 30px;
+  }
+
 }
 
 
 
 
 
-@media (max-widh: 530px) {
+@media (max-width: 530px) {
   .title {
     font-size: 122px;
   }
 
   .subtitle {
     font-size: 70px;
+  }
+
+  .contacts__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contacts {
+    padding: 50px 0;
+  }
+
+  .contacts_headtext,
+  .contacts__text,
+  .form__input,
+  .form__input::placeholder,
+  .order {
+    font-size: 18px;
   }
 }
